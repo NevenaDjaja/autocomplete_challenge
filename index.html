@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Autocomplete challenge</title>
+	<style>
+		body {
+			font-family: Verdana, Helvetica, sans-serif;
+		}
+		#autocomplete-form input {
+			height: 24px;
+			width:120px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			font-size: 14px;
+		}
+		#suggestions {
+			list-style: none;
+			position: absolute;
+			left: 148px;
+			padding: 0;
+			margin: 0;
+			width: 126px;
+			font-size: 14px;
+			border: 1px solid #ccc;
+		}
+		#suggestions li {
+			cursor: pointer;
+			padding: 4px;
+		}
+		#suggestions li:hover {
+			background-color: #eee;
+		}
+	</style>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<h3>Meteor - Autocomplete challenge </h3>
+	<div id="autocomplete-form">
+		<label for="autocomplete">Enter some text:</label>
+		<input type="text" name="autocomplete" id="autocomplete" />
+	</div>
+	<ul id="suggestions"></ul>
+</body>
+</html>
