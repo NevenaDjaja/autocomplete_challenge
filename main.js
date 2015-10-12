@@ -17,9 +17,7 @@ window.onload = function() {
         suggestion = document.createElement("li");
         suggestion.appendChild(document.createTextNode(data[ind]));
         suggestions.appendChild(suggestion);
-      }
-
-      if (suggestion) {
+        // add event listeners to list items
         suggestion.addEventListener('click', function(){
           input.value = this.textContent;
           suggestions.style.display = "none";
